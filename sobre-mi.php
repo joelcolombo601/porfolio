@@ -1,3 +1,7 @@
+<?php
+    $pg = "sobre-mi";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,32 +17,7 @@
 </head>
 <body id="sobre-mi" class="d-flex flex-column h-100">
   <header class="container">
-    <nav class="navbar navbar-expand-md navbar-white bg-white mb-4">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active"  href="sobre-mi.html">Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="proyectos.html">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <div class="cv">
-                <a href="">Descargar mi CV<i class="fa-solid fa-download"></i></a>
-            </div>
-          </div>
-        </div>
-      </nav>
+  <?php include_once "menu.php"; ?>
 </header>
     <main class="container">
       <section class="container" id="descripcion">
@@ -132,7 +111,6 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
       <section id="experiencia">
         <div class="container">
@@ -140,18 +118,18 @@
             <div class="col-12">
               <h2><i class="fa-solid fa-briefcase"></i>Experiencia laboral <br><br></h2>
             </div>
-          </div>
-        </div>
-        <div class="row shadow">
-          <div class="col-sm-2 d-none d-sm-block p-5">
+            <div class="row shadow">
+            <div class="col-sm-2 d-none d-sm-block p-5">
               <img src="imagenes/sin-logo.png" alt="trabajo" class="img-fluid">
-          </div>
-          <div class="col-sm-10 col-12 my-3">
+            </div>
+            <div class="col-sm-10 col-12 my-3">
               <h3>"puesto de trabajo"</h3>
               <h4>"lugar de trabajo"</h4>
               <h5>"tiempo trabajado"</h5>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore molestiae soluta officia! Debitis eligendi obcaecati illo, totam iure quis nesciunt provident ducimus aperiam ipsam omnis! Nesciunt distinctio veritatis vero fugit.</p>
-          </div>
+            </div>
+        </div> 
+      </div>     
       </section>
       <section id="cursos">
         <div class="container">
@@ -159,8 +137,6 @@
             <div class="col-12">
               <h2>Cursos <br><br></h2>
             </div>
-          </div>
-        </div>
         <div class="row shadow">
           <div class="col-sm-2 d-none d-sm-block p-5">
               <img src="imagenes/sin-logo.png" alt="trabajo" class="img-fluid">
@@ -168,9 +144,11 @@
           <div class="col-sm-10 col-12 my-3">
               <h3>Programación Web Full Stack</h3>
               <h4>depcsuite</h4>
-              <h5>01/09/23 al 28/02"24</h5>
+              <h5>01/09/23 al 28/02/24</h5>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore molestiae soluta officia! Debitis eligendi obcaecati illo, totam iure quis nesciunt provident ducimus aperiam ipsam omnis! Nesciunt distinctio veritatis vero fugit.</p>
           </div>
+        </div>
+      </div>
       </section>
     </main>
     <footer class="container mt-auto py-4">
